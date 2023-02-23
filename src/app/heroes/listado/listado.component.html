@@ -1,0 +1,17 @@
+<!-- //Directiva @ngFor para elistar arreglos de manera dinamica -->
+<h1>¡Listado Heroes!</h1>
+
+<ul>    
+    <li *ngFor="let heroe of heroes" >
+    {{ heroe }}
+    </li>
+
+
+</ul>
+
+<button (click)=" borrar()  "> Borrar </button>
+    
+<div *ngIf=" heroeBorrado !== '' " >
+    <h3>Heroe Borrado : <small> {{ heroeBorrado }} </small></h3>
+   
+</div>
