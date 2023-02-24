@@ -1,0 +1,28 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row"> 
+    <div class="col">
+        <!-- Formulario a traves de la creacion de complementos hijo
+             implementando simplemnete el modulo de personajes -->
+        <app-personajes [personajes]="personajes">
+        </app-personajes>
+       
+    </div>
+
+    <div class="col">
+        
+        <app-agregar 
+        
+        [nuevo]="nuevo" 
+        (onNuevoPersonaje)="agregarNuevoPersonaje( $event ) "
+        
+        >
+        </app-agregar>
+
+     </div>
+
+</div>
+
+
+

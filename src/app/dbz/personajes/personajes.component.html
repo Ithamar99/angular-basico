@@ -1,0 +1,10 @@
+  <!-- Formulario que utiliza la directiva ngFor para
+     implementar buenas practicas de modulacion y recursividad -->
+    <h3>Personajes</h3>
+
+        <hr>
+        <ul>
+            <li *ngFor="let personaje of personajes" >
+                {{ personaje.nombre }} - {{ personaje.poder | number }}
+            </li>
+        </ul> 

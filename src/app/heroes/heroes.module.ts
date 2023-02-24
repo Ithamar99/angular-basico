@@ -6,10 +6,12 @@ import { ListadoComponent } from "./listado/listado.component";
 @NgModule({
     declarations: [
         HeroeComponent,
-        ListadoComponent
+        ListadoComponent,
+        
     ],
 
     exports: [
+        HeroeComponent,
         ListadoComponent
     ],
 
