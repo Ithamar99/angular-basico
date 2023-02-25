@@ -20,16 +20,7 @@ export class MainPageComponent {
 
   }
 
-  get personajes():Personaje []{
-    return this.dbzServices.personajes
-  }
-  agregarNuevoPersonaje( argumento: Personaje ){
-
-    this.personajes.push( argumento );
-
-  }
 
   constructor( private dbzServices: DbzService){
-   
   }
 }

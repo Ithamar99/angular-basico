@@ -5,7 +5,7 @@
     <div class="col">
         <!-- Formulario a traves de la creacion de complementos hijo
              implementando simplemnete el modulo de personajes -->
-        <app-personajes [personajes]="personajes">
+        <app-personajes >
         </app-personajes>
        
     </div>
@@ -15,7 +15,6 @@
         <app-agregar 
         
         [nuevo]="nuevo" 
-        (onNuevoPersonaje)="agregarNuevoPersonaje( $event ) "
         
         >
         </app-agregar>
